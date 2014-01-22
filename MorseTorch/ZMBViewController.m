@@ -8,7 +8,11 @@
 
 #import "ZMBViewController.h"
 
-@interface ZMBViewController ()
+@interface ZMBViewController () <UITextFieldDelegate>
+@property (strong, nonatomic) IBOutlet UITextField *myTextField;
+
+@property (weak, nonatomic) NSString *myMessage;
+
 
 @end
 
@@ -18,6 +22,22 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    self.myTextField.delegate = self;
+}
+
+- (void)textFieldDidEndEditing:(UITextField *)textField
+{
+    self.myMessage = textField.text;
+    NSLog(@"%@", self.myMessage);
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    if (textField) {
+        [textField resignFirstResponder];
+    }
+    return YES;
 }
 
 - (void)didReceiveMemoryWarning

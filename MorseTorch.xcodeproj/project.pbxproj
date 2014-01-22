@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8A938392188F2286004F188E /* ZMBTorchController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A938391188F2286004F188E /* ZMBTorchController.m */; };
 		8AABBB20188DCA9E00916CD3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AABBB1F188DCA9E00916CD3 /* Foundation.framework */; };
 		8AABBB22188DCA9E00916CD3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AABBB21188DCA9E00916CD3 /* CoreGraphics.framework */; };
 		8AABBB24188DCA9E00916CD3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AABBB23188DCA9E00916CD3 /* UIKit.framework */; };
@@ -21,6 +22,7 @@
 		8AABBB41188DCA9E00916CD3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AABBB23188DCA9E00916CD3 /* UIKit.framework */; };
 		8AABBB49188DCA9E00916CD3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8AABBB47188DCA9E00916CD3 /* InfoPlist.strings */; };
 		8AABBB4B188DCA9E00916CD3 /* MorseTorchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AABBB4A188DCA9E00916CD3 /* MorseTorchTests.m */; };
+		8AABBB56188DCEEA00916CD3 /* NSString+MorseCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AABBB55188DCEEA00916CD3 /* NSString+MorseCode.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8A938390188F2286004F188E /* ZMBTorchController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZMBTorchController.h; sourceTree = "<group>"; };
+		8A938391188F2286004F188E /* ZMBTorchController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZMBTorchController.m; sourceTree = "<group>"; };
 		8AABBB1C188DCA9E00916CD3 /* MorseTorch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MorseTorch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AABBB1F188DCA9E00916CD3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8AABBB21188DCA9E00916CD3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -53,6 +57,8 @@
 		8AABBB46188DCA9E00916CD3 /* MorseTorchTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MorseTorchTests-Info.plist"; sourceTree = "<group>"; };
 		8AABBB48188DCA9E00916CD3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8AABBB4A188DCA9E00916CD3 /* MorseTorchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MorseTorchTests.m; sourceTree = "<group>"; };
+		8AABBB54188DCEEA00916CD3 /* NSString+MorseCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MorseCode.h"; sourceTree = "<group>"; };
+		8AABBB55188DCEEA00916CD3 /* NSString+MorseCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MorseCode.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +136,10 @@
 				8AABBB28188DCA9E00916CD3 /* InfoPlist.strings */,
 				8AABBB2B188DCA9E00916CD3 /* main.m */,
 				8AABBB2D188DCA9E00916CD3 /* MorseTorch-Prefix.pch */,
+				8AABBB54188DCEEA00916CD3 /* NSString+MorseCode.h */,
+				8AABBB55188DCEEA00916CD3 /* NSString+MorseCode.m */,
+				8A938390188F2286004F188E /* ZMBTorchController.h */,
+				8A938391188F2286004F188E /* ZMBTorchController.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -253,6 +263,8 @@
 				8AABBB30188DCA9E00916CD3 /* ZMBAppDelegate.m in Sources */,
 				8AABBB2C188DCA9E00916CD3 /* main.m in Sources */,
 				8AABBB36188DCA9E00916CD3 /* ZMBViewController.m in Sources */,
+				8A938392188F2286004F188E /* ZMBTorchController.m in Sources */,
+				8AABBB56188DCEEA00916CD3 /* NSString+MorseCode.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,6 +473,7 @@
 				8AABBB50188DCA9E00916CD3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8AABBB51188DCA9E00916CD3 /* Build configuration list for PBXNativeTarget "MorseTorchTests" */ = {
 			isa = XCConfigurationList;
@@ -469,6 +482,7 @@
 				8AABBB53188DCA9E00916CD3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
