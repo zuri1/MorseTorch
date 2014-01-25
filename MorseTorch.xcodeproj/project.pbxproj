@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8A938392188F2286004F188E /* ZMBTorchController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A938391188F2286004F188E /* ZMBTorchController.m */; };
+		8A1B9F471893158900538CDE /* ZMBTorchController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1B9F461893158900538CDE /* ZMBTorchController.m */; };
 		8AABBB20188DCA9E00916CD3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AABBB1F188DCA9E00916CD3 /* Foundation.framework */; };
 		8AABBB22188DCA9E00916CD3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AABBB21188DCA9E00916CD3 /* CoreGraphics.framework */; };
 		8AABBB24188DCA9E00916CD3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AABBB23188DCA9E00916CD3 /* UIKit.framework */; };
@@ -36,8 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		8A938390188F2286004F188E /* ZMBTorchController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZMBTorchController.h; sourceTree = "<group>"; };
-		8A938391188F2286004F188E /* ZMBTorchController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZMBTorchController.m; sourceTree = "<group>"; };
+		8A1B9F451893158800538CDE /* ZMBTorchController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZMBTorchController.h; path = ../ZMBTorchController.h; sourceTree = "<group>"; };
+		8A1B9F461893158900538CDE /* ZMBTorchController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZMBTorchController.m; path = ../ZMBTorchController.m; sourceTree = "<group>"; };
 		8AABBB1C188DCA9E00916CD3 /* MorseTorch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MorseTorch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AABBB1F188DCA9E00916CD3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8AABBB21188DCA9E00916CD3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -123,6 +123,8 @@
 				8AABBB31188DCA9E00916CD3 /* Main.storyboard */,
 				8AABBB34188DCA9E00916CD3 /* ZMBViewController.h */,
 				8AABBB35188DCA9E00916CD3 /* ZMBViewController.m */,
+				8A1B9F451893158800538CDE /* ZMBTorchController.h */,
+				8A1B9F461893158900538CDE /* ZMBTorchController.m */,
 				8AABBB37188DCA9E00916CD3 /* Images.xcassets */,
 				8AABBB26188DCA9E00916CD3 /* Supporting Files */,
 			);
@@ -138,8 +140,6 @@
 				8AABBB2D188DCA9E00916CD3 /* MorseTorch-Prefix.pch */,
 				8AABBB54188DCEEA00916CD3 /* NSString+MorseCode.h */,
 				8AABBB55188DCEEA00916CD3 /* NSString+MorseCode.m */,
-				8A938390188F2286004F188E /* ZMBTorchController.h */,
-				8A938391188F2286004F188E /* ZMBTorchController.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -263,7 +263,7 @@
 				8AABBB30188DCA9E00916CD3 /* ZMBAppDelegate.m in Sources */,
 				8AABBB2C188DCA9E00916CD3 /* main.m in Sources */,
 				8AABBB36188DCA9E00916CD3 /* ZMBViewController.m in Sources */,
-				8A938392188F2286004F188E /* ZMBTorchController.m in Sources */,
+				8A1B9F471893158900538CDE /* ZMBTorchController.m in Sources */,
 				8AABBB56188DCEEA00916CD3 /* NSString+MorseCode.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

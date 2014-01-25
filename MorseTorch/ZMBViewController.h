@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ZMBTorchController.h"
 
-@interface ZMBViewController : UIViewController
+@interface ZMBViewController : UIViewController <sendsLetter>
 
 @end

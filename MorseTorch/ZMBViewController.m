@@ -7,11 +7,18 @@
 //
 
 #import "ZMBViewController.h"
+#import "NSString+MorseCode.h"
+#import "ZMBTorchController.h"
 
 @interface ZMBViewController () <UITextFieldDelegate>
 @property (strong, nonatomic) IBOutlet UITextField *myTextField;
+@property (weak, nonatomic) IBOutlet UILabel *currentLetter;
+
 
 @property (weak, nonatomic) NSString *myMessage;
+@property (weak, nonatomic) NSString *translatedMessage;
+@property (nonatomic, strong) NSDictionary *morseDictionary;
+@property (nonatomic, strong) ZMBTorchController *torchController;
 
 
 @end
@@ -25,38 +32,17 @@
     
     self.myTextField.delegate = self;
     
-    NSDictionary *dict = @{@"a" : @"-.",
-                           @"b" : @"-...",
-                           @"c" : @"-.-.",
-                           @"d" : @"-..",
-                           @"e" : @".",
-                           @"f" : @"..-.",
-                           @"g" : @"--.",
-                           @"h" : @"....",
-                           @"i" : @"..",
-                           @"j" : @".---",
-                           @"k" : @"-.-",
-                           @"l" : @".-..",
-                           @"m" : @"--",
-                           @"n" : @"-.",
-                           @"o" : @"---",
-                           @"p" : @".--.",
-                           @"q" : @"--.-",
-                           @"r" : @".-.",
-                           @"s" : @"...",
-                           @"t" : @"-",
-                           @"u" : @"..-",
-                           @"v" : @"...-",
-                           @"w" : @".--",
-                           @"x" : @"-..-",
-                           @"y" : @"-.--",
-                           @"z" : @"--.."};
-    NSLog(@"%@", dict);
+    self.torchController = [ZMBTorchController new];
+    
+    self.torchController.delegate = self;
 }
 
 - (void)textFieldDidEndEditing:(UITextField *)textField
 {
     self.myMessage = textField.text;
+//    self.translatedMessage = [NSString ]
+    NSString *testString = @"hi";
+    
     NSLog(@"%@", self.myMessage);
 }
 
@@ -72,6 +58,19 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)sendMessage:(id)sender {
+    NSString *messageString = self.myTextField.text;
+    [self.torchController getsMessage:messageString];
+}
+
+- (void)displayLetter:(NSString *)letter
+{
+    NSOperationQueue *mainQueue = [NSOperationQueue mainQueue];
+    [mainQueue addOperationWithBlock:^{
+        self.currentLetter.text = letter;
+    }];
 }
 
 @end
